@@ -1,0 +1,125 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim,enumitem}
+\usepackage[margin = 3 cm]{geometry}
+
+\def\upint{\mathchoice%
+    {\mkern13mu\overline{\vphantom{\intop}\mkern7mu}\mkern-20mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+  \int}
+\def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 2]{Homework 2}
+
+\date{\today} 
+\maketitle 
+ 
+
+\begin{problem}[{\bfseries optional} for bonus points]
+Show that if $f:[a,b] \rightarrow \mathbb{R}$ is a bounded function that is integrable in the sense of Darboux, then it is integrable in the sense of Riemann.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+Since we proved the converse in class, we now know that Darboux integrability is equivalent to Riemann integrability for real-valued functions bounded on a closed interval $[a,b]$.
+
+
+\begin{problem}[1B-3]
+Suppose $f,g:[a,b] \rightarrow \mathbb{R}$ are bounded functions.  Prove that
+$$\lowint_{a}^{b}f + \lowint_{a}^{b}g \le \lowint_{a}^{b}(f+g) $$
+and
+$$\upint_{a}^{b}(f+g) \le \upint_{a}^{b}f + \upint_{a}^{b}g  $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Consider the Dirichlet function $f:[0,1] \rightarrow \mathbb{R}$ defined via
+$$x \mapsto f(x) = \begin{cases}1, &\text{ if } x \in \mathbb{Q}\cap [0,1];\\ 0, &\text{ if } x \notin \mathbb{Q}\cap[0,1].  \end{cases} $$
+Show that $f$ is not Riemann integrable.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}[1B-4]
+Give an example of bounded functions $f,g:[0,1] \rightarrow \mathbb{R}$ such that
+$$\lowint_{0}^{1}f + \lowint_{0}^{1}g < \lowint_{0}^{1}(f+g) $$
+and
+$$\upint_{0}^{1}(f+g) < \upint_{0}^{1}f + \upint_{0}^{1}g  $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}[1B-5]
+Give an example of a sequence of continuous real-valued functions $f_{1},f_{2},\ldots$ on $[0,1]$ and a continuous real-valued function $f$ on $[0,1]$ such that
+$$f(x) = \lim_{k \to \infty} f_{k}(x) $$
+for each $x \in [0,1]$ but
+$$\int_{0}^{1}f \neq \lim_{k \to \infty} \int_{0}^{1} f_{k}. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}[1B-1]
+Consider the Thomae function $f:[0,1] \rightarrow \mathbb{R}$ defined via
+$$x \mapsto f(x) = \begin{cases}\frac{1}{n}, &\text{ if } x = \frac{m}{n} \in \mathbb{Q}\cap [0,1], \text{ where } \frac{m}{n} \text{ is in reduced form and } n > 0;\\ 0, &\text{ if } x \notin \mathbb{Q}\cap[0,1].  \end{cases} $$
+Show that $f$ is Riemann integrable and compute $\int_{0}^{1} f$.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+In class, we defined the Lebesgue outer measure of a subset of $\mathbb{R}^{n}$ in terms of {\bfseries closed} $n$-dimensional boxes.  But one could use {\bfseries open} $n$-dimensional boxes instead as presented in the book.  An {\bfseries open} $n$-dimensional box is a subset of $\mathbb{R}^{n}$ of the form
+$$I = (a_{1},b_{1}) \times (a_{2},b_{2}) \times \ldots \times (a_{n},b_{n}), $$
+and one defines its $n$-dimensional volume to be the same as the corresponding {\bfseries closed} box when the endpoints of each interval are included.
+
+\begin{problem}
+For the purpose of this problem let $n=1$ and for $A \subseteq \mathbb{R}$, define
+$$\lambda^{0}(A) = {\rm inf}\left\{\sum_{k=1}^{\infty}\ell(I_{k}) : I_{1},I_{2},\ldots \text{ is a sequence of open intervals satisfying } A \subseteq \bigcup_{k=1}^{\infty} I_{k}  \right\}. $$
+Show that $\lambda^{0}(A) = \lambda^{*}(A)$ for all subsets $A$ of $\mathbb{R}$.  (A similar statement is true for $n > 1$, but I leave that to you to think about on your own.)
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
