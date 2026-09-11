@@ -1,0 +1,133 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim,enumitem}
+\usepackage[margin = 3 cm]{geometry}
+
+\def\upint{\mathchoice%
+    {\mkern13mu\overline{\vphantom{\intop}\mkern7mu}\mkern-20mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+  \int}
+\def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 3]{Homework 3}
+
+\date{\today} 
+\maketitle 
+ 
+ 
+\begin{problem}
+Give a formal proof of the nested interval property in $\mathbb{R}$:  if 
+$$[a_{1},b_{1}] \supseteq [a_{2},b_{2}] \supseteq \ldots \supseteq [a_{n},b_{n}] \supseteq \ldots$$
+is a nested decreasing sequence of closed intervals, then
+$$\bigcap_{k=1}^{\infty} [a_{k},b_{k}] \neq \varnothing. $$
+(We used that result in class when showing that the Cantor set is uncountable.)
+\end{problem}
+\begin{solution1}
+
+\end{solution1} 
+
+\begin{problem}
+Assume $I$ and $I_{1},I_{2},\ldots, I_{m}$ are $n$-dimensional closed boxes in $\mathbb{R}^{n}$ such that
+$$I \subseteq I_{1} \cup \ldots \cup I_{m}.$$
+Show that 
+$$V_{n}(I) \le V_{n}(I_{1}) + \ldots + V_{n}(I_{m}).$$
+(You can think about the case $n=1$ and $n=2$ first.  We used that result within a proof in class.)
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+\begin{problem}
+Show the translation invariance property of the outer Lebesgue measure:  if $A \subseteq \mathbb{R}^{n}$ and $a_{0} \in \mathbb{R}^{n}$, then
+$$\lambda^{*}(a_{0}+A) = \lambda^{*}(A), $$
+where $a_{0}+A = \{ a_{0} + a : a \in A\}$.  (We used that result within a proof in class.)
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+Show that every interval $I$ in $\mathbb{R}$ that contain at least two distinct numbers is uncountable.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+In class, we reviewed briefly the notion of open sets and closed sets in $\mathbb{R}^{n}$.  Let $S \subseteq \mathbb{R}^{n}$.  A point $s \in S$ is called an \emph{interior point} of $S$ if there exists $r > 0$ such that $B(s,r) \subseteq S$, where $B(s,r) = \{x \in \mathbb{R}^{n}: d(x,s)< r\}$.  A point $s \in \mathbb{R}^{n}$ is called an \emph{adherent point} of $S$ if for all $r >0$, one has $B(s,r) \cap S \neq \varnothing$.  The collection of interior points of $S$ is denoted by ${\rm int}(S)$ or $S^{\circ}$ and the collection of adherent points of $S$ is denoted by $\overline{S}$.  One always has
+$$S^{\circ} \subseteq S \subseteq \overline{S}. $$
+A set $S$ is called \emph{open} if $S^{\circ} = S$ and \emph{closed} if $S = \overline{S}$.
+
+\begin{problem}
+Let $S \subseteq \mathbb{R}^{n}$.  Show that $S^{\circ}$ is open and $\overline{S}$ is closed.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Let $S \subseteq \mathbb{R}^{n}$.  Show that $S$ is open if and only if its complement $S^{c}$ is closed.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+\begin{problem}
+Let $\{U_{i}\}_{i \in I}$ be an arbitrary collection of open sets of $\mathbb{R}^{n}$.  Show that
+$$\bigcup_{i \in I}U_{i} $$
+is also open.  Similarly, show that a \emph{finite} intersection of open sets is open.  (Is an arbitrary intersection of open sets open in general???)
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Let $\{F_{i}\}_{i \in I}$ be an arbitrary collection of closed sets of $\mathbb{R}^{n}$.  Show that
+$$\bigcap_{i \in I}F_{i} $$
+is also closed.  Similarly, show that a \emph{finite} union of closed sets is closed.  (Is an arbitrary union of closed sets closed in general???)
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+If you want to extend those results to the more general context of metric spaces, read the first subsection of Section 6A in your book and do as many problems as possible among the first 11 problems from Section 6A.
+
+\begin{problem}
+Do as many problems as possible from Section 2A in your book.
+\end{problem}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
