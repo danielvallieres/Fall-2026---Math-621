@@ -1,0 +1,107 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim,enumitem}
+\usepackage[margin = 3 cm]{geometry}
+
+\def\upint{\mathchoice%
+    {\mkern13mu\overline{\vphantom{\intop}\mkern7mu}\mkern-20mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+  \int}
+\def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 6]{Homework 6}
+
+\date{\today} 
+\maketitle 
+
+
+The goal of the first problem is to show the existence of a subset of $\mathbb{R}$ which is not Lebesgue measurable showing that $\mathcal{L}(\mathbb{R}) \subsetneqq \mathcal{P}(\mathbb{R})$.  In order to complete this problem, you should review the Vitali set $V$ we defined in class.  Remember that $V$ was a complete set of representatives for the equivalence relation $\sim$ defined on $[-1,1]$ via $x \sim y$ if $x - y \in \mathbb{Q}$.
+\begin{problem}
+\hfill
+\begin{enumerate}
+\item Show that if $A \subseteq \mathcal{L}(\mathbb{R}^{n})$, then $a + A \in \mathcal{L}(\mathbb{R}^{n})$ for all $a \in \mathbb{R}^{n}$.
+\item Assume now that the Vitali set $V$ is Lebesgue measurable in $\mathbb{R}$.  Deduce from the first part that the translates $r + V$, where $r \in \mathbb{Q}\cap [-2,2]$ are Lebesgue measurable.
+\item Reach a contradiction.
+\end{enumerate}
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+The next problem combines measure theory and group theory so make sure to put both your Math 621 and Math 449 hats on.  You showed in Problem 3 of Hw 3 that the outer Lebesgue measure is translation invariant.  Thus the Lebesgue measure on $\mathcal{L}(\mathbb{R}^{n})$ is translation invariant.  We also pointed out that the hyperbolic measure on the upper half-plane $\mathbb{H}$ is not translation invariant.  Now $\mathbb{T} = \mathbb{R}/\mathbb{Z}$ is a quotient group, since $\mathbb{Z} \le \mathbb{R}$ so it has a binary operation coming from the addition on $\mathbb{R}$ that we shall denote by $+$.  For the following problem, we consider the abelian group $(\mathbb{T},+)$.
+\begin{problem}
+Show that given any subset $S \subseteq \mathbb{T}$, one has $\mu(x + S) = \mu(S)$ for all $x \in \mathbb{T}$, where $\mu$ is the measure on $\mathbb{T}$ obtained from the Lebesgue measure on $\mathbb{R}$ restricted to $[0,1)$ and pushed forward to $\mathbb{T}$ via the map $[0,1) \rightarrow \mathbb{T}$.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+Let $(Y,\mathcal{A})$ be a measurable space and let $f:X \rightarrow Y$ be a function.  Define
+$$\mathcal{B} = \{B \subseteq X : f(B) \in \mathcal{A} \}. $$
+Is $\mathcal{B}$ a $\sigma$-algebra on $X$ in general???  If yes, prove it, otherwise explain what can go wrong.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+Let $(Y,\mathcal{A})$ be a measurable space and let $f:X \rightarrow Y$ be a function.  Define
+$$f^{*}\mathcal{A} = \{B \subseteq X : \text{there exists } A \in \mathcal{A}  \text{ for which } B = f^{-1}(A)\}. $$
+Show that $f^{*}\mathcal{A}$ is a $\sigma$-algebra on $X$; it is called the pull-back of $\mathcal{A}$.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+Let $(Y,\mathcal{A},\mu)$ be a measure space and let $f:X \rightarrow Y$ be a {\bfseries surjective} function.  Define $f^{*}\mu:f^{*}\mathcal{A} \rightarrow [0,\infty]$ via
+$$f^{*}\mu(B) := \mu(A) $$
+wheres $A$ is such that $B = f^{-1}(A)$.
+\begin{enumerate}
+\item Show that $f^{*}\mu$ is well-defined.
+\item Is $f^{*}\mu$ a measure?  If yes prove it, otherwise tell me what can go wrong.
+\item What happens if one drops the condition that $f$ is surjective??
+\end{enumerate}
+\end{problem}
+\begin{solution1}
+
+\end{solution1} 
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
