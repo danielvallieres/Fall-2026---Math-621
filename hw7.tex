@@ -1,0 +1,95 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim,enumitem}
+\usepackage[margin = 3 cm]{geometry}
+
+\def\upint{\mathchoice%
+    {\mkern13mu\overline{\vphantom{\intop}\mkern7mu}\mkern-20mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+  \int}
+\def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 7]{Homework 7}
+
+\date{\today} 
+\maketitle 
+
+
+Let $(X,\mathcal{A},\mu)$ be a measure space for which $\mu(X) < \infty$ and let $f:X \rightarrow \mathbb{R}$ be a bounded function.  In class we defined what it means for $f$ to be Lebesgue integrable in which case we also defined the meaning of the Lebesgue integral
+$$\int_{X}f. $$
+The Lebesgue satisfies several properties listed below.  You should try to prove as many of those properties as possible.
+\begin{problem}
+Assume $f, g \in B(X)$ are both Lebesgue integrable.  Then $f+g$ is Lebesgue integrable and
+$$\int_{X}(f+g) = \int_{X}f + \int_{X}g. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Assume $f \in B(X)$ is Lebesgue integrable and $\lambda \in \mathbb{R}$.  Then $\lambda f$ is also Lebesgue integrable and
+$$\int_{X}(\lambda f) = \lambda \int_{X}f. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+If $f,g \in B(X)$ are Lebesgue integrable and $f \le g$, then 
+$$\int_{X}f \le \int_{X}g. $$
+Moreover, $|f|$ is Lebesgue integrable as well and
+$$\Big|\int_{X}f \Big| \le \int_{X} |f|. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+If $f \in B(X)$ is Lebesgue integrable and $A, B \in \mathcal{A}$ are such that 
+$$X = A \cup B \text{ and } \mu(A \cap B) = 0, $$
+then $f$ is Lebesgue integrable on both $A$ and $B$ and
+$$\int_{X}f = \int_{A}f + \int_{B}f. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
