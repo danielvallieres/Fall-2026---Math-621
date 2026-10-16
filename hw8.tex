@@ -1,0 +1,100 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim,enumitem}
+\usepackage[margin = 3 cm]{geometry}
+
+\def\upint{\mathchoice%
+    {\mkern13mu\overline{\vphantom{\intop}\mkern7mu}\mkern-20mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+  \int}
+\def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 8]{Homework 8}
+
+\date{\today} 
+\maketitle 
+
+Let $(X,\mathcal{A},\mu)$ be a measure space.  In class, we defined what it means for a property to hold \emph{almost everywhere} on $X$.  It means that there exists a measurable set $A \in \mathcal{A}$ such that $\mu(A) = 0$ and for which the property holds true for all $x \in X \smallsetminus A$.
+
+\begin{problem}
+Let $(X,\mathcal{A},\mu)$ be a measure space such that $\mu(X)<\infty$ and let $f:X \rightarrow \mathbb{R}$ be a bounded function.  Assume that $f = 0$ almost everywhere on $X$.  Show that $f$ is Lebesgue integrable on $X$ and that
+$$\int_{X}f = 0. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Let $(X,\mathcal{A},\mu)$ be a measure space such that $\mu(X)<\infty$ and let $g,f:X \rightarrow \mathbb{R}$ be bounded functions.  Assume that $f$ is Lebesgue integrable.  Show that if $f = g$ almost everywhere on $X$, then $g$ is also Lebesgue integrable and
+$$\int_{X}g = \int_{X}f. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+The rest of this homework set is about measurable functions for which we now recall the definition from class.  If $(X,\mathcal{A})$ is a measurable space, then a function $f:X \rightarrow \mathbb{R}$ is called measurable if for all $\lambda \in \mathbb{R}$, one has
+$$\{x \in X : f(x) > \lambda\} \in \mathcal{A}. $$
+
+\begin{problem}
+Let $(X,\mathcal{A})$ be a measurable space and let $f:X \rightarrow \mathbb{R}$ be a constant function meaning that there exists $c \in \mathbb{R}$ such that $f(x) = c$ for all $x \in X$.  Show that $f$ is a measurable function.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+Let $(X,\mathcal{A})$ be a measurable space and let $f,g:X \rightarrow \mathbb{R}$ be measurable function.  Show that $f + g$, $f - g$, $f \cdot g$, and $f/g$ provided $g(x) \neq 0$ for all $x \in X$, are all measurable functions.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+Let $D \in \mathcal{L}(\mathbb{R}^{n})$.  We view $D$ as a measurable space with the $\sigma$-algebra given by the restriction of $\mathcal{L}(\mathbb{R}^{n})$.  Show that a continuous function $f: D \rightarrow \mathbb{R}$ is measurable.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Let $D \in \mathcal{L}(\mathbb{R})$.  We view $D$ as a measurable space with the $\sigma$-algebra given by the restriction of $\mathcal{L}(\mathbb{R})$.  Show that if a function $f:D \rightarrow \mathbb{R}$ is increasing, then $f$ is measurable.  (Remember that being increasing means $x \le y$ implies $f(x) \le f(y)$.)
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
