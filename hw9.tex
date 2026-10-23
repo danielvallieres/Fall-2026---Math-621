@@ -1,0 +1,148 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim,enumitem}
+\usepackage[margin = 3 cm]{geometry}
+
+\def\upint{\mathchoice%
+    {\mkern13mu\overline{\vphantom{\intop}\mkern7mu}\mkern-20mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+  \int}
+\def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 9]{Homework 9}
+
+\date{\today} 
+\maketitle 
+
+Recall from Homework $5$:  if $X$ is a set and $\mathcal{S} \subseteq \mathcal{P}(X)$, then the intersection of all $\sigma$-algebras on $X$ containing $\mathcal{S}$ is a $\sigma$-algebra on $X$ containing $\mathcal{S}$.  In fact, it is the smallest one containing $\mathcal{S}$.  We shall denote this $\sigma$-algebra by $\langle \mathcal{S} \rangle$.  With this notation, one has $\mathcal{B}(\mathbb{R}^{n}) = \langle \tau \rangle$, where $\tau$ is the collection of all open subsets of $\mathbb{R}^{n}$.
+
+
+\begin{problem}
+Let $(Y,\mathcal{A})$ be a measurable space and let $f: X \rightarrow Y$ be a function.  Assume that $\mathcal{A} = \langle \mathcal{S} \rangle$ for some $\mathcal{S} \subseteq \mathcal{P}(Y)$.  Show that
+$$f^{*}\mathcal{A}= \langle \{f^{-1}(S) : S \in \mathcal{S} \}\rangle. $$
+(The pull-back $f^{*}\mathcal{A}$ was defined in Problem $4$ of Homework $6$.)
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Show that if $f:\mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$ is a continuous function, then given any $B \in \mathcal{B}(\mathbb{R}^{n})$, one has $f^{-1}(B) \in \mathcal{B}(\mathbb{R}^{m})$.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+\begin{problem}
+Consider the Vitali set $V \subseteq [-1,1]$ and let $E = V \times \{0\} \subseteq \mathbb{R}^{2}$.  Does one have $E \in \mathcal{L}(\mathbb{R}^{2})$?  Explain carefully.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+Consider the function $f: \mathbb{R} \rightarrow \mathbb{R}^{2}$ given by $x \mapsto f(x) = (x,0)$.  
+\begin{enumerate}
+\item Show that $f$ is a continuous function.
+\item What is $f^{-1}(E)$, where $E$ was defined in the previous problem?
+\item Does one have $E \in \mathcal{B}(\mathbb{R}^{2})$?  Explain carefully.
+\item We know that $\mathcal{B}(\mathbb{R}^{2}) \subseteq \mathcal{L}(\mathbb{R}^{2})$, but do we have an equality?  Explain carefully.
+\end{enumerate}
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+Is the measure space $(\mathbb{R}^{2},\mathcal{B}(\mathbb{R}^{2}),\lambda)$, where $\lambda$ is the Lebesgue measure restricted to the Borel sets $\mathcal{B}(\mathbb{R}^{2})$, a complete measure space??  Explain carefully.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+The same statements as above are true for $\mathbb{R}$ instead of $\mathbb{R}^{2}$, but the proofs are a bit more complicated (at least the ones I know).  If you are interested you can go over the following {\bfseries optional} problems after reading about the Cantor function $\Lambda$ on page $58$ of your book.  (These problems below will {\bfseries not} appear on any exams.)
+
+\noindent\rule{\linewidth}{0.4pt}
+
+The goal is to come up with a set $A \in \mathcal{L}(\mathbb{R}) \smallsetminus \mathcal{B}(\mathbb{R})$.  This will be accomplished in several steps which I have broken down into problems with hints.  Throughout this problem set, given $S \subseteq \mathbb{R}$, we let 
+$$S - S :=\{s_{1} - s_{2} : s_{1}, s_{2} \in S \}. $$
+
+\begin{problem}
+Show that given any $A \in \mathcal{L}(\mathbb{R})$ such that $\infty > \lambda(A) > 0$, there exists $\delta > 0$ such that
+$$(-\delta,\delta) \subseteq A - A. $$
+\end{problem}
+Hint:  The idea relies on the observation that if $(t + A) \cap A \neq \varnothing$, then $t \in A - A$.  So we have to show that if $|t|$ is small, then $(t+A) \cap A \neq \varnothing$.  For that purpose, give yourself an $\varepsilon$ satisfying $0 < \varepsilon < 1$.  Argue first that there exists an open set $G$ of $\mathbb{R}$ such that $A \subseteq G$ and for which 
+$$\lambda(G) < \lambda(A)(1+\varepsilon). $$
+Then, write $G$ as a countable disjoint union of open intervals $I_{n}$.  Let $A_{n} = A \cap I_{n}$.  Show that the last displayed equation implies that there exists $k \in \mathbb{N}$ such that
+$$\lambda(I_{k}) < (1+\varepsilon)\lambda(A_{k}). $$
+For that $k$, explain why $I_{k}$ is necessarily a finite open interval, and then write $I_{k} = (a_{k},b_{k})$ for some real numbers $a_{k}, b_{k}$.  Explain why 
+$$\lambda(I_{k} \cup (I_{k} + t)) \leq \lambda(I_{k}) + |t|. $$
+At last, show that if $A_{k} \cap (t + A_{k}) = \varnothing$, then
+$$2\lambda(I_{k})< (1+\varepsilon)(\lambda(I_{k}) + |t|). $$
+Conclude the proof of Problem 6.
+
+\begin{problem}
+Show that if $A \in \mathcal{L}(\mathbb{R})$ is such that $\infty > \lambda(A) > 0$, then there exists $E \subseteq A$ such that $E \notin \mathcal{L}(\mathbb{R})$.
+\end{problem}
+Hint:  This is a refinement of our proof in class that there exist sets that are not Lebesgue measurable.  Define the relation $\sim$ on $\mathbb{R}$ via $x \sim y$ if $x - y \in \mathbb{Q}$.  Show that this relation is an equivalence relation.  Let $V$ be a complete set of representatives for this equivalence relation.  Show that
+$$\mathbb{R} = \bigcup_{r \in \mathbb{Q}} (r+V),$$
+and that this union is disjoint.  For $r \in \mathbb{Q}$, let $A_{r} = A \cap (r+V)$.  If $A_{r} \notin \mathcal{L}(\mathbb{R})$ for some $r \in \mathbb{Q}$, explain why we are done.  If $A_{r} \in \mathcal{L}(\mathbb{R})$ for all $r \in \mathbb{Q}$, then explain why
+$$A_{r} - A_{r} \subseteq V - V \text{ and } (V - V) \cap \mathbb{Q}^{\times} = \varnothing. $$
+Using Problem 6, show then that $\lambda(A) = 0$, a contradiction...
+
+\begin{problem}
+Consider the function $f:[0,1] \rightarrow [0,2]$ defined via
+$$x \mapsto f(x) = \Lambda(x) + x, $$
+where $\Lambda$ is the Cantor function.  Show that $f$ is a continuous bijection for which its inverse is also continuous.
+\end{problem}
+
+\begin{problem}
+Let $B_{1}, B_{2}$ be two Borel sets of $\mathbb{R}$ and let $g:B_{1} \rightarrow B_{2}$ be a homeomorphism (that is, $g$ is a continuous bijection whose inverse is also continuous).  Show that if $B \subseteq B_{1}$ is any Borel set, then $g(B)$ is also a Borel set.
+\end{problem}
+
+\begin{problem}
+Coming back to the function $f$ from Problem 8, show that $\lambda(f(C)) = 1$, where $C$ is the Cantor set.
+\end{problem}
+Hint:  What is $\lambda(f([0,1]\smallsetminus C))$?
+
+\begin{problem}
+Since $\lambda(f(C)) = 1 > 0$, explain why there exists $\Omega \subseteq f(C)$ such that $\Omega \notin \mathcal{L}(\mathbb{R})$.  Then, set $A = f^{-1}(\Omega) \subseteq [0,1]$.  Show that $A \in \mathcal{L}(\mathbb{R}) \smallsetminus \mathcal{B}(\mathbb{R})$.
+\end{problem}
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
