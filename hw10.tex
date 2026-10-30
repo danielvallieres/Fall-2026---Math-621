@@ -1,0 +1,105 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim,enumitem}
+\usepackage[margin = 3 cm]{geometry}
+
+\def\upint{\mathchoice%
+    {\mkern13mu\overline{\vphantom{\intop}\mkern7mu}\mkern-20mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+  \int}
+\def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 10]{Homework 10}
+
+\date{\today} 
+\maketitle 
+
+
+
+
+
+
+\begin{problem}
+Let $(X,\mathcal{A})$ be a measurable space and let $f: X \rightarrow \mathbb{R}$ be a function.  Show that $f$ is measurable if and only if given any Borel set $B \in \mathcal{B}(\mathbb{R})$, one has $f^{-1}(B) \in \mathcal{A}$.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+Let $(X,\mathcal{A},\mu)$ be a measure space such that $\mu(X) < \infty$ and let $f: X \rightarrow \mathbb{R}$ be a bounded function.  Let $A \in \mathcal{A}$ and consider as well the measure space $(A,\mathcal{A}|_{A},\mu|_{A})$.  Show that $f \cdot \chi_{A}$ is integrable on $X$ if and only if $f$ is integrable on $A$ in which case one has
+$$\int_{A}f = \int_{X} f \cdot \chi_{A}. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+From now on, we work with the Lebesgue integral for a measurable function $f:X \rightarrow [0,\infty]$ as discussed this week.  Here $(X,\mathcal{A},\mu)$ is a measure space with no assumptions whatsoever.
+
+\begin{problem}[3A-1]
+Suppose $(X,\mathcal{A},\mu)$ is a measure space and $f:X \rightarrow [0,\infty]$ is a measurable function such that 
+$$\int_{X} f < \infty. $$
+Explain why
+$$\inf_{A}(f) = 0 $$
+for all $A \in \mathcal{A}$ with $\mu(A) = \infty$.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Suppose $(X,\mathcal{A})$ is a measurable space and $f_{n}:X \rightarrow [-\infty,\infty]$ is a sequence of measurable functions.  Define $g,h: X \rightarrow [-\infty,\infty]$ via
+$$g(x) = {\rm inf}\{f_{n}(x): n \in \mathbb{N} \} \text{ and } h(x) = {\rm sup}\{f_{n}(x): n \in \mathbb{N} \}.$$
+Show that both $g$ and $h$ are measurable functions.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+
+
+\begin{problem}
+Let $(X,\mathcal{A},\mu)$ be a measure space and let $\phi,\psi:X \rightarrow [0,\infty)$ be two simple measurable functions.  Show that 
+$$I(\phi + \psi) = I(\phi) + I(\psi). $$ 
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
