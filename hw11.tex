@@ -1,0 +1,138 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim,enumitem}
+\usepackage[margin = 3 cm]{geometry}
+
+\def\upint{\mathchoice%
+    {\mkern13mu\overline{\vphantom{\intop}\mkern7mu}\mkern-20mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+  \int}
+\def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 11]{Homework 11}
+
+\date{\today} 
+\maketitle 
+
+
+
+
+
+
+\begin{problem}
+In class, we went over the following example of a pointwise converging sequence of functions.  The sequence was $f_{n}:[0,1] \rightarrow [0,\infty]$ defined via
+\begin{equation*}
+x \mapsto f_{n}(x) = 
+\begin{cases}
+n,& \text{ if } 0 \le x \le \frac{1}{n} ; \\
+1-x, & \text{ if } \frac{1}{n} \le x \le 1.
+\end{cases}
+\end{equation*}
+\begin{enumerate}
+\item Are the functions $f_{n}$ measurable?  Explain.
+\item Does the sequence $(f_{n})_{n=1}^{\infty}$ converge pointwise to a function $f:[0,1] \rightarrow [0,\infty]$?  If no, explain, if yes, find $f$.
+\item Is the function $f$ measurable?  Explain.
+\item Calculate $\int_{[0,1]}f_{n}$.
+\item Calculate $\int_{[0,1]}f$.
+\item Does one have
+$$\int_{[0,1]}f_{n} \rightarrow \int_{[0,1]}f, $$
+when $n \to \infty$?
+\item Is this a counterexample to the monotone convergence theorem?  Explain.
+\end{enumerate}
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+Let $(X,\mathcal{A})$ be a measurable space and let $f:X \rightarrow [-\infty,\infty]$ be a function.  In class, we will define two functions $f^{+},f^{-}:X \rightarrow [0,\infty]$ via
+\begin{equation*}
+x \mapsto f^{+}(x) = 
+\begin{cases}
+f(x), & \text{ if } f(x) \ge 0;\\
+0, & \text{ if } f(x) < 0.
+\end{cases}
+\end{equation*}
+and 
+\begin{equation*}
+x \mapsto f^{-}(x) = 
+\begin{cases}
+0, & \text{ if } f(x) \ge 0;\\
+-f(x), & \text{ if } f(x) < 0.
+\end{cases}
+\end{equation*}
+Show that $f$ is measurable if and only if both $f^{+}$ and $f^{-}$ are measurable.
+\end{problem}
+
+\begin{solution1}
+
+\end{solution1}
+
+
+We proved a similar result to the following problem in class under the assumption $\mu(X)< \infty$ and $f: X \rightarrow \mathbb{R}$ is bounded.
+\begin{problem}[3A-3]
+Suppose $(X,\mathcal{A},\mu)$ is a measure space and $f:X \rightarrow [0,\infty]$ is a measurable function.  Prove that
+$$\int_{X}f > 0 \text{ if and only if } \mu(\{x \in X : f(x) > 0\})> 0. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}[3A-9]
+Let $(X,\mathcal{A},\mu)$ be a measure space and let $f: X \rightarrow [0,\infty]$ be a measurable function.  Define $\nu:\mathcal{A} \rightarrow [0,\infty]$ by
+$$\nu(A) = \int_{X} f \cdot \chi_{A} $$
+for $A \in \mathcal{A}$.  Prove that $\nu$ is a measure on $(X,\mathcal{A})$.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+
+
+\begin{problem}[3A-10]
+Suppose $(X,\mathcal{A},\mu)$ is a measure space and let $f_{n}: X \rightarrow [0,\infty]$ be a sequence of measurable functions.  Define $f:X \rightarrow [0,\infty]$ by
+$$f(x) = \sum_{k=1}^{\infty}f_{k}(x). $$
+Prove that
+$$\int_{X} f = \sum_{k=1}^{\infty} \int_{X}f_{k}. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
