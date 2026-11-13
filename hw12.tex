@@ -1,0 +1,174 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim,enumitem}
+\usepackage[margin = 3 cm]{geometry}
+
+\def\upint{\mathchoice%
+    {\mkern13mu\overline{\vphantom{\intop}\mkern7mu}\mkern-20mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+  \int}
+\def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 12]{Homework 12}
+
+\date{\today} 
+\maketitle 
+
+
+In class, we reminded ourselves about the notion of lim sup and lim inf:  If $(a_{n})_{n=1}^{\infty}$ is a sequence such that $a_{n} \in [-\infty,\infty]$ for all $n \in \mathbb{N}$, then letting
+$$b_{n} = \inf_{k \ge n }a_{k}  \text{ and } c_{n} = \sup_{k \ge n} a_{k}$$
+one defines
+$$\liminf_{n \to \infty}a_{n} = \lim_{n \to \infty}b_{n} \text{ and } \limsup_{n \to \infty}a_{n} = \lim_{n \to \infty}c_{n}, $$
+and that makes sense since both sequences $(b_{n})_{n=1}^{\infty}$ and $(c_{n})_{n=1}^{\infty}$ are monotonic and hence converge in $[-\infty,\infty]$.
+
+\begin{problem}
+Show that
+\begin{enumerate}
+\item One always has
+$$\liminf_{n \to \infty}a_{n} \le \limsup_{n \to \infty}a_{n}. $$
+\item One has that $(a_{n})_{n=1}^{\infty}$ converges if and only if 
+$$\liminf_{n \to \infty}a_{n} = \limsup_{n \to \infty}a_{n} $$
+in which case the limit of $(a_{n})_{n=1}^{\infty}$ is precisely this common value.
+\end{enumerate}
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Let $(X,\mathcal{A},\mu)$ be a measure space and let
+$$f:X \rightarrow [-\infty,\infty] $$
+be measurable for which its Lebesgue integral is defined.  Show that if $A,B \in \mathcal{A}$ are such that
+$$X = A \cup B \text{ and } \mu(A \cap B) = 0, $$
+then both
+$$\int_{A}f \text{ and } \int_{B}f $$
+are defined and 
+$$\int_{X}f = \int_{A}f + \int_{B}f. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+In class, we went over the following example of a pointwise converging sequence of functions.  The sequence was $f_{n}:[0,1] \rightarrow [0,\infty]$ defined via
+\begin{equation*}
+x \mapsto f_{n}(x) = 
+\begin{cases}
+n,& \text{ if } 0 \le x \le \frac{1}{n} ; \\
+1-x, & \text{ if } \frac{1}{n} \le x \le 1.
+\end{cases}
+\end{equation*}
+In homework 11, you studied this sequence of functions carefully.  Does it contradict the dominated convergence theorem??  Explain carefully.
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\noindent\rule{\linewidth}{0.4pt}
+
+The rest of this problem set will consist in realizing that the theory of Lebesgue integration contains as a particular case the theory of absolutely convergent series.  We start with the following general definition:
+
+\begin{definition}
+Let $(X,\mathcal{A},\mu)$ be a measure space and let 
+$$f: X \rightarrow \mathbb{R} $$
+be a measurable function.  One says that $f$ is {\bfseries Lebesgue integrable} if 
+$$\int_{X} |f| < \infty. $$
+The collection of all Lebesgue integrable functions is denoted by $\mathcal{L}^{1}(X,\mu)$.
+\end{definition}
+Be sure to realize that saying that $f$ is Lebesgue integrable is {\bfseries stronger} than just assuming that its Lebesgue integral is defined.
+
+\begin{problem}
+Put your linear algebra hat on and show that $\mathcal{L}^{1}(X,\mu)$ is a vector subspace of $\mathbb{R}^{X}$ so that $\mathcal{L}^{1}(X,\mu)$ is in particular a vector space over $\mathbb{R}$ itself.  (The set $\mathbb{R}^{X}$ denotes the vector space of real-valued functions on $X$.)
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+Recall that in class we pointed out that $(\mathbb{N},\mathcal{P}(\mathbb{N}),\mu)$, where $\mu:\mathcal{P}(\mathbb{N}) \rightarrow [0,\infty]$ is the {\bfseries counting measure} is a measure space.
+
+\begin{problem}
+\hfill
+\begin{enumerate}
+\item Explain why every function $f:\mathbb{N} \rightarrow [-\infty,\infty]$ is measurable.
+\item What subsets of $\mathbb{N}$ have measure zero??
+\end{enumerate}
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Let $a_{1},\ldots,a_{n} \in [0,\infty)$ and define $f:\mathbb{N} \rightarrow [0,\infty)$ via
+$$i \mapsto f(i) = \begin{cases} a_{i}, &\text{ if } 1 \le i \le n;\\ 0, &\text{ if } i > n.  \end{cases} $$
+Show that
+$$\int_{\mathbb{N}}f = \sum_{i=1}^{n}a_{i}. $$
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Let $(a_{i})_{i=1}^{\infty}$ be a sequence such that $a_{i} \in [0,\infty)$ for all $i \in \mathbb{N}$ and define $f_{n}:\mathbb{N} \rightarrow [0,\infty)$ via
+$$i \mapsto f_{n}(i) = \begin{cases} a_{i}, & \text{ if } 1 \le i \le n;\\0, & \text{ if } i < n. \end{cases} $$
+\begin{enumerate}
+\item Show that the sequence $(f_{n})_{n=1}^{\infty}$ converges pointwise to a function $f$ and determine $f$.
+\item Show that the sequence $(f_{n})_{n=1}^{\infty}$ is increasing and apply the monotone convergence theorem to deduce that
+$$\int_{\mathbb{N}} f = \sum_{i=1}^{\infty}a_{i}. $$
+\end{enumerate}
+\end{problem}
+
+Given a sequence $(a_{i})_{i=1}^{\infty}$ of real numbers, one defines
+$$a_{i}^{+} = \begin{cases} a_{i}, \text{ if } a_{i} \ge 0; \\ 0, \text{ if } a_{i} < 0, \end{cases} \text{ and also } a_{i}^{-} = \begin{cases} 0, \text{ if } a_{i} \ge 0; \\ -a_{i}, \text{ if } a_{i} < 0. \end{cases} $$
+
+\begin{problem}
+Let $(a_{i})_{i=1}^{\infty}$ be a sequence such that $a_{i} \in \mathbb{R}$ for all $i \in \mathbb{R}$ and define $f:\mathbb{N} \rightarrow \mathbb{R}$ via 
+$$i \mapsto f(i) = a_{i}. $$
+\begin{enumerate}
+\item Show that
+$$\int_{\mathbb{N}}f^{+} = \sum_{i=1}^{\infty}a_{i}^{+} \text{ and } \int_{\mathbb{N}}f^{-} = \sum_{i=1}^{\infty}a_{i}^{-}. $$
+\item Show that $f \in \mathcal{L}^{1}(\mathbb{N},\mu)$ if and only if the series 
+$$\sum_{i=1}^{\infty}a_{i} $$
+converges {\bfseries absolutely}.
+\item Show that if $f \in \mathcal{L}^{1}(\mathbb{N},\mu)$, then
+$$\int_{\mathbb{N}}f = \sum_{i=1}^{\infty}a_{i}. $$
+\item Assume that $a_{i} = (-1)^{i+1}/i$.  Does the corresponding series $\sum a_{i}$ converge?  Does one have $f \in \mathcal{L}^{1}(\mathbb{N},\mu)$?
+\end{enumerate}
+
+\end{problem}
+
+For the particular case of the measure space $(\mathbb{N},\mathcal{P}(\mathbb{N}),\mu)$, where $\mu$ is the counting measure, one often denotes $\mathcal{L}^{1}(\mathbb{N},\mu)$ simply by $\ell^{1}$.  Thus by the last problem, one has:
+$$\ell^{1} = \left\{ (a_{i})_{i=1}^{\infty}: a_{i}\in \mathbb{R} \text{ for all } i \in \mathbb{R} \text{ and } \sum_{i=1}^{\infty}|a_{i}|< \infty \right\}. $$
+
+Start thinking about what the dominated convergence theorem would say for series...I'll keep this for the next homework set.
+
+\end{document}
+
+
+
+
+
+
+
+
+
