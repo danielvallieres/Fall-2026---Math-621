@@ -1,0 +1,144 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim,enumitem}
+\usepackage[margin = 3 cm]{geometry}
+
+\def\upint{\mathchoice%
+    {\mkern13mu\overline{\vphantom{\intop}\mkern7mu}\mkern-20mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+    {\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+  \int}
+\def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 12]{Homework 12}
+
+\date{\today} 
+\maketitle 
+
+
+
+
+\begin{problem}
+For all integers $n,i \ge 1$, let $a_{n,i} \in \mathbb{R}$.  Assume that:
+\begin{enumerate}
+\item For all $n \ge 1$, one has
+$$\lim_{n \to \infty} a_{n,i} = a_{i}. $$
+\item There exists a sequence $(b_{i})_{i=1}^{\infty}$ of non-negative real numbers such that 
+$$|a_{n,i}| \le b_{i}$$
+for all $n,i \ge 1$ and for which 
+$$\sum_{i=1}^{\infty}b_{i} < \infty. $$
+\end{enumerate}
+Show that
+$$\lim_{n \to \infty}\sum_{i=1}^{\infty}a_{n,i} = \sum_{i=1}^{\infty}a_{i}. $$
+(Hint:  Apply the DCT.)
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+\begin{problem}
+Let us revisit the classical equality
+$$\lim_{m \to \infty}\left(1 + \frac{x}{m} \right)^{m} = \sum_{n=0}^{\infty}\frac{x^{n}}{n!} $$
+valid for all $x \in \mathbb{R}$.  (First, remember for yourself why the series above on the right is absolutely convergent for all $x \in \mathbb{R}$...)
+\begin{enumerate}
+\item For a fixed $x \in \mathbb{R}$, use the binomial theorem to show that
+$$\left(1 + \frac{x}{m} \right)^{m} = \sum_{n=0}^{m} \binom{m}{n} \frac{x^{n}}{m^{n}}. $$
+\item For a fixed $x \in \mathbb{R}$, let
+$$a_{m,n} = \begin{cases} \binom{m}{n}\frac{x^{n}}{m^{n}}, &\text{ if } n \le m;\\
+0, &\text{ otherwise.}
+ \end{cases} $$
+\item For a fixed $n \in \mathbb{N}$, show that
+$$\lim_{m \to \infty} a_{m,n} = \frac{x^{n}}{n!}.$$
+\item Show that for all $m,n \ge 1$, one has
+$$|a_{m,n}| \le \frac{|x|^{n}}{n!}. $$
+\item Using Problem $1$, show that
+$$\lim_{m \to \infty}\left(1 + \frac{x}{m} \right)^{m} = \sum_{n=0}^{\infty}\frac{x^{n}}{n!}. $$
+\end{enumerate}
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+\begin{problem}
+Let $(X,\mathcal{A},\mu)$ be a measure space and let $f \in \mathcal{L}^{1}(X,\mu)$.  For $i \in \mathbb{N}$, let $A_{i} \in \mathcal{A}$ be such that
+$$A_{1} \subseteq A_{2} \subseteq \ldots \subseteq A_{n} \subseteq \ldots $$
+and let
+$$A = \bigcup_{i=1}^{\infty}A_{i}. $$
+Show that
+$$\lim_{n \to \infty} \int_{A_{n}}f = \int_{A}f. $$
+(Hint:  Consider $f_{n} = f \chi_{A_{n}}$ and apply DCT.)
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+
+
+\begin{problem}
+For $i \in \mathbb{N}$, let $a_{i} \in \mathbb{R}$ and assume that
+$$\sum_{i=1}^{\infty}a_{i} $$
+converges absolutely.  Let $\sigma:\mathbb{N} \rightarrow \mathbb{N}$ be any permutation (i.e. a bijection).  Show that
+$$\sum_{i=1}^{\infty}a_{i} = \sum_{i=1}^{\infty}a_{\sigma(i)}. $$
+(Hint:  For each $i \in \mathbb{N}$, consider $A_{i} = \{ \sigma(1),\ldots,\sigma(i)\}$ and apply the previous problem.)
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+This last problem is far from being true if the series is not assumed to be absolutely convergent.  Google {\bfseries Riemann's rearrangement theorem} on Friday night...
+
+In class, we went over improper Riemann integrals carefully and connected this with the Lebesgue theory.  Make sure to do all of the ``optional'' homework problems that I suggested in class... In particular, we showed that we obtain a function $\Gamma:(0,\infty) \rightarrow [0,\infty)$ given by
+$$s \mapsto \Gamma(s) = \int_{0}^{\infty} e^{-x}x^{s-1}, $$
+and that the integral on the right can be thought of as an improper Riemann integral or as the Lebesgue integral
+$$\int_{(0,\infty)} e^{-x}x^{s-1}.$$
+Below, you will prove elementary properties of the gamma function.
+
+\begin{problem}
+\hfill
+\begin{enumerate}
+\item Show that $\Gamma(1) = 1$.
+\item Using integration by parts, show that 
+$$\Gamma(s+1) = s\Gamma(s) $$
+for all $s > 0$.
+\item Show that for all $n \in \mathbb{N}$, one has
+$$\Gamma(n+1) = n!, $$
+so that the function $\Gamma$ interpolates the factorial function to non-integer real numbers.
+\end{enumerate}
+\end{problem}
+\begin{solution1}
+
+\end{solution1}
+
+In your free time, think about how one can use the functional equation of the Gamma function to extend its definition to all of $\mathbb{R} \smallsetminus \{\ldots,-3, -2, -1, 0 \}$.  After the break, we will try to understand if $\Gamma$ is a continuous or even differentiable function using the Lebesgue theory.  The same ideas will apply to other integral transforms such as the Fourier, the Laplace and the Mellin transforms.
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
